@@ -1,0 +1,14 @@
+{
+    "name": "yohan/rest-flex-php",
+    "description": "RestFlexPHP is a robust PHP package meticulously crafted to simplify the intricacies of handling HTTP requests, with a primary focus on supercharging your experience in managing RESTful APIs. This package provides an elegant and developer-friendly interface, allowing you to effortlessly send requests, handle responses, and navigate RESTful endpoints with finesse. Elevate your PHP-based API interactions with RestFlexPHP and enjoy a seamless development journey.",
+    "type": "library",
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "Yohan Sandun Kumaranayake",
+            "email": "yohan.sandunk@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
