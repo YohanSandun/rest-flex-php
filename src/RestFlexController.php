@@ -1,5 +1,7 @@
 <?php
 
+namespace RestFlexPHP;
+
 require_once 'HttpMethod.php';
 require_once 'HttpStatus.php';
 require_once 'RestFlexRequest.php';

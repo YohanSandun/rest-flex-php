@@ -1,4 +1,7 @@
 <?php
+
+namespace RestFlexPHP;
+
 class HttpStatus {
     // Information Responses
     const _CONTINUE = 100;

@@ -1,5 +1,7 @@
 <?php
 
+namespace RestFlexPHP;
+
 class RestFlexRequest {
     public $body;
     public $params;

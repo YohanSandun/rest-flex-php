@@ -1,5 +1,7 @@
 <?php
 
+namespace RestFlexPHP;
+
 class HttpMethod {
     const GET = 'GET';
     const POST = 'POST';
