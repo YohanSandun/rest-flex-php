@@ -71,10 +71,11 @@ class RestFlexController {
 
     public static function generateHtaccess() {
         echo "Running generateHtaccess...\n";
+        $dir = __DIR__;
         $content = <<<EOT
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /rest-flex-php/src/
+    RewriteBase /$dir/
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ ./index.php?url=$1 [QSA,L]
