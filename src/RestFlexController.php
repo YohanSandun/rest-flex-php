@@ -70,6 +70,7 @@ class RestFlexController {
     }
 
     public static function generateHtaccess() {
+        echo "Running generateHtaccess...\n";
         $content = <<<EOT
 <IfModule mod_rewrite.c>
     RewriteEngine On
@@ -80,5 +81,6 @@ class RestFlexController {
 </IfModule>
 EOT;
         file_put_contents(__DIR__ . '../.htaccess', $content);
+        echo "Finish Running generateHtaccess...\n" . __DIR__;
     }
 }
