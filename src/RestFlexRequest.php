@@ -1,21 +1,20 @@
 <?php
+
 class RestFlexRequest {
-    public $method;
-    public $data;
+    public $body;
     public $params;
 
     /**
-     * @param $method
-     * @param $data
+     * @param $body
+     * @param $params
      */
-    public function __construct($method, $data, $params)
+    public function __construct($body, $params)
     {
-        $this->method = $method;
-        $this->data = $data;
+        $this->body = $body;
         $this->params = $params;
     }
 
-    public function sendResponse($data, $status = 200) {
+    public function sendResponse($data, $status = HttpStatus::OK) {
         http_response_code($status);
         echo json_encode($data);
     }
