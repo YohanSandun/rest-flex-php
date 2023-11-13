@@ -18,7 +18,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "RestFlexPHP\\RestFlexController::generateHtaccess"
+            "copy \"vendor\\yohan\\rest-flex-php\\src\\.htaccess\" \".htaccess\""
         ]
     }
 }
