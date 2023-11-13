@@ -68,4 +68,17 @@ class RestFlexController {
             exit;
         }
     }
+
+    public static function generateHtaccess() {
+        $content = <<<EOT
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /rest-flex-php/src/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ ./index.php?url=$1 [QSA,L]
+</IfModule>
+EOT;
+        file_put_contents(__DIR__ . '../.htaccess', $content);
+    }
 }

@@ -15,5 +15,10 @@
         "psr-4": {
             "RestFlexPHP\\": "src/"
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "RestFlexPHP\\RestFlexController::generateHtaccess"
+        ]
     }
 }
