@@ -1,5 +1,8 @@
 # RestFlexPHP
 
+[![Total Downloads](https://img.shields.io/packagist/dt/yohan/rest-flex-php?color=rgb(30%2C201%2C31))](https://packagist.org/packages/yohan/rest-flex-php)
+[![Latest Stable Version](https://img.shields.io/packagist/v/yohan/rest-flex-php)](https://packagist.org/packages/yohan/rest-flex-php)
+
 `RestFlexPHP` is a lightweight PHP package designed to simplify handling RESTful requests and responses. It includes a flexible controller class (`RestFlexController`) for routing requests and a request class (`RestFlexRequest`) for encapsulating request-related data.
 
 ## Installation
